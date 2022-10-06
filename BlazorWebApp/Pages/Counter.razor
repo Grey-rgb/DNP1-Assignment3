@@ -1,0 +1,49 @@
+﻿@using Domain.Models
+page "/Posts"
+@inject HttpClient Http
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Posts </h1>
+
+<p role="status">Current posts:</p>
+
+@if (posts == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Temp. (C)</th>
+            <th>Temp. (F)</th>
+            <th>Summary</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var forecast in posts)
+        {
+            <tr>
+                /table data here
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Post[]? posts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<FetchData.WeatherForecast[]>("sample-data/weather.json");
+    }
+    
+    public Post
+
+}

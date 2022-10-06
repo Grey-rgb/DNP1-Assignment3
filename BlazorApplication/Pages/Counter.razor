@@ -1,0 +1,32 @@
+﻿@page "/Counter"
+@using System.Reflection.Metadata
+
+<PageTitle>PostCreation</PageTitle>
+
+<h1>Create new post</h1>
+
+<h4>Title:</h4>
+<input Id = title @bind="currentTitleValue">
+<br/>
+
+<h4>Body: </h4>
+<input Id = body @bind="currentBodyValue">
+<br/>
+
+<h4>User: </h4>
+<input Id = user @bind="currentUserValue">
+<br/>
+
+<button Id = postCreateBtn @onclick="getValue"> Create Post</button>
+
+@code {
+    private string currentTitleValue { get; set; }
+    private string currentBodyValue { get; set; }
+    private string currentUserValue { get; set; }
+
+    private void getValue()
+    {
+        Console.WriteLine(currentTitleValue + " " + currentBodyValue + " " + currentUserValue);
+    }
+
+}

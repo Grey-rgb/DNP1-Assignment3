@@ -1,0 +1,54 @@
+﻿@page "/FetchData"
+@inject HttpClient Http
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h1>Posts</h1>
+
+@if (posts == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Body</th>
+            <th>User</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var post in posts)
+        {
+            <tr>
+               <td>@post.title</td>
+               <td>@post.body</td>
+               <td>@post.user</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Posts[]? posts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        posts = await Http.GetFromJsonAsync<Posts[]>("sample-data/postsData.json");
+    }
+
+    public class Posts
+    {
+        public string title { get; set; }
+
+        public string body { get; set; }
+
+        public string user { get; set; }
+    }
+
+}
