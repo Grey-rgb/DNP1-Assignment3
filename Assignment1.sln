@@ -1,10 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment1", "Assignment1\Assignment1.csproj", "{8EC5F584-D68F-42B9-B9ED-C8E932A6285A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{8EC5F584-D68F-42B9-B9ED-C8E932A6285A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{776AFA60-EB0B-494A-8DA3-C9E704AFE9D7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApplication", "BlazorApplication\BlazorApplication.csproj", "{89F53981-E195-4E08-B192-53E0A63CD485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileData", "FileData\FileData.csproj", "{E4E7460A-FAA6-4556-AD37-95F177BCAE0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{72B2F247-B5B5-4E8A-AD4A-0967B1A02B1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +28,13 @@ Global
 		{89F53981-E195-4E08-B192-53E0A63CD485}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89F53981-E195-4E08-B192-53E0A63CD485}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89F53981-E195-4E08-B192-53E0A63CD485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E7460A-FAA6-4556-AD37-95F177BCAE0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E7460A-FAA6-4556-AD37-95F177BCAE0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E7460A-FAA6-4556-AD37-95F177BCAE0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E7460A-FAA6-4556-AD37-95F177BCAE0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B2F247-B5B5-4E8A-AD4A-0967B1A02B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B2F247-B5B5-4E8A-AD4A-0967B1A02B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B2F247-B5B5-4E8A-AD4A-0967B1A02B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B2F247-B5B5-4E8A-AD4A-0967B1A02B1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
