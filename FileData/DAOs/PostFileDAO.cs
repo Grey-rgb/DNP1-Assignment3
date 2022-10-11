@@ -35,4 +35,11 @@ public class PostFileDAO : IPostDAO
         //Return a task from the post result
         return Task.FromResult(post);
     }
+
+    public Task<IEnumerable<Post>> GetAsyncAll()
+    {
+        IEnumerable<Post> result = context.Posts.AsEnumerable();
+
+        return Task.FromResult(result);
+    }
 }

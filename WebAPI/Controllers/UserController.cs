@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace WebAPI.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("/users")]
 public class UserController : ControllerBase
 {
     private readonly IUserLogic userLogic;
@@ -17,7 +17,7 @@ public class UserController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<User>> CreateAync(UserCreationDTO dto)
+    public async Task<ActionResult<User>> CreateAsync(UserCreationDTO dto)
     {
         try
         {

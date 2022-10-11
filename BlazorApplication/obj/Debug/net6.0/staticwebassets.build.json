@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oF1gZQiAOF8L9TsI9ez8m7s6CfRFp+qA4LDeHf0NSRI=",
+  "Hash": "K8up4SBrezNtB0ux0GmFo0cVRPyWHxORtNwfo4jzNSQ=",
   "Source": "BlazorApplication",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Application.dll",
+      "SourceId": "BlazorApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Application.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\Application\\bin\\Debug\\net6.0\\Application.dll"
+    },
+    {
+      "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Application.pdb",
+      "SourceId": "BlazorApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Application.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\Application\\bin\\Debug\\net6.0\\Application.pdb"
+    },
     {
       "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "BlazorApplication",
@@ -83,6 +117,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net6.0\\BlazorApplication.pdb"
+    },
+    {
+      "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Domain.dll",
+      "SourceId": "BlazorApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Domain.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\Domain\\bin\\Debug\\net6.0\\Domain.dll"
+    },
+    {
+      "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Domain.pdb",
+      "SourceId": "BlazorApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Domain.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\Domain\\bin\\Debug\\net6.0\\Domain.pdb"
     },
     {
       "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.6.0.1.gmorinfqz5.js",
@@ -3621,6 +3689,23 @@
       "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Binder.dll"
     },
     {
+      "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\obj\\Debug\\net6.0\\build-gz\\+zU1EoWi.gz",
+      "SourceId": "BlazorApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Domain.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Domain.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Domain.pdb"
+    },
+    {
       "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\obj\\Debug\\net6.0\\build-gz\\0eGqei5P.gz",
       "SourceId": "BlazorApplication",
       "SourceType": "Computed",
@@ -3755,6 +3840,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Encoding.dll"
+    },
+    {
+      "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\obj\\Debug\\net6.0\\build-gz\\2+KIKnsR.gz",
+      "SourceId": "BlazorApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Domain.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Domain.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Domain.dll"
     },
     {
       "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\obj\\Debug\\net6.0\\build-gz\\2bfehDg+.gz",
@@ -4539,6 +4641,23 @@
       "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.Common.dll"
     },
     {
+      "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\obj\\Debug\\net6.0\\build-gz\\DARtFvln.gz",
+      "SourceId": "BlazorApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Application.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Application.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Application.pdb"
+    },
+    {
       "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\obj\\Debug\\net6.0\\build-gz\\DcUnxTGZ.gz",
       "SourceId": "BlazorApplication",
       "SourceType": "Computed",
@@ -4775,6 +4894,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Quic.dll"
+    },
+    {
+      "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\obj\\Debug\\net6.0\\build-gz\\GIEGGnqx.gz",
+      "SourceId": "BlazorApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Application.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Application.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Application.dll"
     },
     {
       "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\obj\\Debug\\net6.0\\build-gz\\GQJ+ucRs.gz",

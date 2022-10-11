@@ -1,5 +1,9 @@
 ﻿@page "/FetchData"
+@using Application.LogicInterfaces
+@using Application.Logic
+@using Domain.Models
 @inject HttpClient Http
+@inject IPostLogic postLogic
 
 <PageTitle>Weather forecast</PageTitle>
 
@@ -35,14 +39,14 @@ else
 }
 
 @code {
-    private Posts[]? posts;
+    private DataPosts[] posts;
 
-    protected override async Task OnInitializedAsync()
+    protected override async Task<IEnumerable<Post>> OnInitializedAsync()
     {
-        posts = await Http.GetFromJsonAsync<Posts[]>("sample-data/postsData.json");
+        posts = postLogic.GetAsyncAll().Result.ToArray();
     }
 
-    public class Posts
+    public class DataPosts
     {
         public string title { get; set; }
 

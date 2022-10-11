@@ -29,7 +29,12 @@ public class PostLogic : IPostLogic
         Post created = await postDAO.CreateAsync(post);
         return created;
     }
-    
+
+    public Task<IEnumerable<Post>> GetAsyncAll()
+    {
+        return postDAO.GetAsyncAll();
+    }
+
     private void ValidateTodo(PostCreationDTO dto)
     {
         if (string.IsNullOrEmpty(dto.title))
