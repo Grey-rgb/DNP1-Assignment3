@@ -1,0 +1,19 @@
+{
+  "Users": [
+    {
+      "UserID": 1,
+      "UserName": "Mads"
+    }
+  ],
+  "Posts": [
+    {
+      "id": 1,
+      "title": "Test",
+      "body": "Hello There",
+      "user": {
+        "UserID": 1,
+        "UserName": "Mads"
+      }
+    }
+  ]
+}
