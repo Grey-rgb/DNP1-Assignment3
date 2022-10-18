@@ -413,6 +413,19 @@
         "runtime": {
           "bin/placeholder/Domain.dll": {}
         }
+      },
+      "HttpClients/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HttpClients.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HttpClients.dll": {}
+        }
       }
     },
     "net6.0/browser-wasm": {
@@ -820,6 +833,19 @@
         },
         "runtime": {
           "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "HttpClients/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HttpClients.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HttpClients.dll": {}
         }
       }
     }
@@ -1593,11 +1619,17 @@
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "HttpClients/1.0.0": {
+      "type": "project",
+      "path": "../HttpClients/HttpClients.csproj",
+      "msbuildProject": "../HttpClients/HttpClients.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Application >= 1.0.0",
+      "HttpClients >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.1",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.1"
     ]
@@ -1629,6 +1661,9 @@
           "projectReferences": {
             "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\Application\\Application.csproj": {
               "projectPath": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\Application\\Application.csproj"
+            },
+            "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\HttpClients\\HttpClients.csproj": {
+              "projectPath": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\HttpClients\\HttpClients.csproj"
             }
           }
         }

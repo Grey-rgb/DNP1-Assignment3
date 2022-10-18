@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "K8up4SBrezNtB0ux0GmFo0cVRPyWHxORtNwfo4jzNSQ=",
+  "Hash": "ifDPuGHzx6oQVLLildCMbkh48anQLi7kexheQWOXty8=",
   "Source": "BlazorApplication",
   "BasePath": "/",
   "Mode": "Root",
@@ -202,6 +202,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\mads8\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.1\\runtimes\\browser-wasm\\native\\dotnet.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\HttpClients.dll",
+      "SourceId": "BlazorApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/HttpClients.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\HttpClients\\bin\\Debug\\net6.0\\HttpClients.dll"
+    },
+    {
+      "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\HttpClients.pdb",
+      "SourceId": "BlazorApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/HttpClients.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\HttpClients\\bin\\Debug\\net6.0\\HttpClients.pdb"
     },
     {
       "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
@@ -4046,6 +4080,23 @@
       "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Emit.Lightweight.dll"
     },
     {
+      "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\obj\\Debug\\net6.0\\build-gz\\5oTQj2qk.gz",
+      "SourceId": "BlazorApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/HttpClients.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\HttpClients.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\HttpClients.pdb"
+    },
+    {
       "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\obj\\Debug\\net6.0\\build-gz\\5S5TmnBm.gz",
       "SourceId": "BlazorApplication",
       "SourceType": "Computed",
@@ -5846,6 +5897,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.ThreadPool.dll"
+    },
+    {
+      "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\obj\\Debug\\net6.0\\build-gz\\NJFQVLb2.gz",
+      "SourceId": "BlazorApplication",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/HttpClients.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\HttpClients.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\bin\\Debug\\net6.0\\wwwroot\\_framework\\HttpClients.dll"
     },
     {
       "Identity": "C:\\Users\\mads8\\OneDrive - ViaUC\\Desktop\\VIA UNI - 3. Semester\\DNP1\\Assignments\\Assignment 1\\Assignment 1 - code\\Assignment1\\BlazorApplication\\obj\\Debug\\net6.0\\build-gz\\NJhoYxY+.gz",

@@ -30,4 +30,19 @@ public class PostController : ControllerBase
             return new StatusCodeResult(StatusCodes.Status500InternalServerError);
         }
     }
+
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Post>>> GetAsync()
+    {
+        try
+        {
+            var posts = await postLogic.GetAsyncAll();
+            return Ok(posts);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(StatusCodes.Status500InternalServerError);
+        }
+    }
 }

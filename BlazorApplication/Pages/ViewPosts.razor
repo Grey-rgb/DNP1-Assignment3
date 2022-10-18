@@ -1,0 +1,64 @@
+﻿@page "/ViewPosts"
+@using Domain.Models
+@using HttpClients.ClientInterfaces
+@inject IPostsService postService
+
+<PageTitle>View all posts</PageTitle>
+
+<h1>Posts</h1>
+
+<div>
+    <button @onclick="LoadTodos">Load</button>
+</div>
+
+@if (posts == null)
+{
+}
+else if (!posts.Any())
+{
+    <p>No Posts to display</p>
+}
+else
+{
+    <table class="table">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Body</th>
+                <th>User</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in posts)
+            {
+                <tr>
+                    <td>@item.title</td>
+                    <td>@item.body</td>
+                    <td>@item.user</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+}
+@if (!string.IsNullOrEmpty(msg))
+{
+    <label style="color: red">@msg</label>
+}
+
+@code {
+    private IEnumerable<Post>? posts;
+    private string msg = "";
+
+    private async Task LoadTodos()
+    {
+        try
+        {
+             posts = await postService.GetAllAsync();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+}
