@@ -30,4 +30,34 @@ public class UserController : ControllerBase
             return StatusCode(StatusCodes.Status500InternalServerError);
         }
     }
+
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<User>>> GetAllAsync()
+    {
+        try
+        {
+            IEnumerable<User> users = await userLogic.GetAllAsync();
+            return Ok(users);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+    
+    [HttpGet("{id:int}")]
+    public async Task<ActionResult<User>> GetUserById([FromRoute] int id)
+    {
+        try
+        {
+            User user = await userLogic.GetById(id);
+            return Ok(user);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
 }

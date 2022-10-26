@@ -17,11 +17,12 @@ public class PostHttpClient : IPostsService
         this.client = client;
     }
 
-    //Create asynchronously method to create a post and pass that post as a JSON object to the URI
+    //Create asynchronous method to create a post and pass that post as a JSON object to the URI
     public async Task CreateAsync(PostCreationDTO dto)
     {
         //HttpResponseMessage object to communicate with a HTTP URL
         HttpResponseMessage response = await client.PostAsJsonAsync("/posts", dto);
+        Console.WriteLine(client.BaseAddress);
         if (!response.IsSuccessStatusCode)
         {
             string context = await response.Content.ReadAsStringAsync();
@@ -45,5 +46,24 @@ public class PostHttpClient : IPostsService
             PropertyNameCaseInsensitive = true
         })!;
         return posts;
+    }
+
+    public async Task<PostViewDTO> GetByIdAsync(int id)
+    {
+        HttpResponseMessage response = await client.GetAsync($"/posts/{id}");
+        string content = await response.Content.ReadAsStringAsync();
+
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
+
+        PostViewDTO post = JsonSerializer.Deserialize<PostViewDTO>(content,
+            new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            })!;
+
+        return post;
     }
 }

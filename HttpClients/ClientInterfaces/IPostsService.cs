@@ -8,4 +8,6 @@ public interface IPostsService
     Task CreateAsync(PostCreationDTO dto);
 
     Task<ICollection<Post>> GetAllAsync();
+    
+    Task<PostViewDTO> GetByIdAsync(int id);
 }

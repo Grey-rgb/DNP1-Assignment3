@@ -1,0 +1,61 @@
+﻿@page "/ViewSinglePost/{id:int}"
+@using HttpClients.ClientInterfaces
+@using Domain.DTOs
+@using Domain.Models
+@inject IPostsService postsService
+@inject NavigationManager navMgr
+
+@if (dto == null)
+{
+    <label>Loading post data</label>
+}
+else
+{
+    <div class="title-field">
+        <h2>@dto.title</h2>
+    </div>
+    <div class="user-field">
+        <h4>@dto.userName</h4>
+    </div>
+    <div class="body-field">
+        <p>@dto.body</p>
+    </div>
+    <div class="go-back-button-field">
+        <button @onclick="@(() => navMgr.NavigateTo($"/ViewPosts"))"> Go back to all posts</button>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(msg))
+    {
+        <label style="color: red">@msg</label>
+    }
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private string msg = "";
+    private PostViewDTO dto = null!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        msg = "";
+
+        try
+        {
+            PostViewDTO postData = await postsService.GetByIdAsync(Id);
+
+            dto = new PostViewDTO(Id)
+            {
+                title = postData.title,
+                body = postData.body,
+                userName = postData.userName
+            };
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+}

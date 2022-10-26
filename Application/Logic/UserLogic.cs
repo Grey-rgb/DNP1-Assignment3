@@ -36,6 +36,25 @@ public class UserLogic : IUserLogic
 
     }
 
+    public async Task<IEnumerable<User>> GetAllAsync()
+    {
+        return await UserDao.getAllAsync();
+    }
+
+    public async Task<User> GetById(int id)
+    {
+        try
+        {
+            User? user = await UserDao.GetByIDAsync(id);
+            return user!;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw new Exception("User does not exist");
+        }
+    }
+
     private void ValidateData(UserCreationDTO userToCreate)
     {
         string userName = userToCreate.UserName;

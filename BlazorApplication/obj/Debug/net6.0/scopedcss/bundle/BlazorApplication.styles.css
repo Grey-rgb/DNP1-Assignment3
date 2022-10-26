@@ -1,3 +1,36 @@
+/* /Pages/ViewPosts.razor.rz.scp.css */
+table[b-l6re2aspam] {
+    width: 100%;
+}
+
+td.body-table-data[b-l6re2aspam]
+{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+td.title-table-data[b-l6re2aspam] {
+    max-width: 33px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+td.username-table-data[b-l6re2aspam] {
+    max-width: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+td.button-table-data[b-l6re2aspam] {
+    max-width: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-yq70x9dt5e] {
     position: relative;

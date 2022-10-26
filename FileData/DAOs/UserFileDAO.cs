@@ -40,6 +40,13 @@ public class UserFileDAO : IUserDAO
     public Task<User?> GetByIDAsync(int id)
     {
         User? existing = context.Users.FirstOrDefault(u => u.UserID == id);
+        Console.WriteLine($"User fetched: {existing}");
         return Task.FromResult(existing);
+    }
+
+    public Task<IEnumerable<User>> getAllAsync()
+    {
+        IEnumerable<User> users = context.Users.AsEnumerable();
+        return Task.FromResult(users);
     }
 }

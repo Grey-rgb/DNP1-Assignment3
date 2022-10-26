@@ -9,4 +9,12 @@ public class PostCreationDTO
     public string title { get; set; }
     
     public User user { get; set; }
+
+    public PostCreationDTO(int ownerId, string title, string body, User user)
+    {
+        this.title = title;
+        this.body = body;
+        this.ownerID = ownerId;
+        this.user = user;
+    }
 }

@@ -22,7 +22,7 @@ public class PostController : ControllerBase
         try
         {
             Post post = await postLogic.CreateAsync(dto);
-            return new StatusCodeResult(StatusCodes.Status201Created);
+            return Created($"/posts/{post.id}", post);
         }
         catch (Exception e)
         {
@@ -43,6 +43,21 @@ public class PostController : ControllerBase
         {
             Console.WriteLine(e);
             return StatusCode(StatusCodes.Status500InternalServerError);
+        }
+    }
+
+    [HttpGet("{id:int}")]
+    public async Task<ActionResult<PostViewDTO>> GetById([FromRoute] int id)
+    {
+        try
+        {
+            PostViewDTO result = await postLogic.GetByIdAsync(id);
+            return Ok(result);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
         }
     }
 }

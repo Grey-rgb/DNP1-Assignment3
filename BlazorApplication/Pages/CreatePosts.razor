@@ -1,0 +1,79 @@
+﻿@page "/CreatePosts"
+@using Domain.DTOs
+@using Domain.Models
+@using HttpClients.ClientInterfaces
+@inject IPostsService postsService
+@inject IUserService userService
+<PageTitle>PostCreation</PageTitle>
+
+<h1>Create new post</h1>
+
+<h4>Title:</h4>
+<input Id="title" @bind="currentTitleValue">
+<br/>
+
+<h4>Body: </h4>
+<input Id="body" @bind="currentBodyValue">
+<br/>
+
+<h4>User: </h4>
+<input Id="user" @bind="currentUserValue">
+<br/>
+
+<button Id="postCreateBtn" class="btn btn-primary" @onclick="CreatePost"> Create Post</button>
+
+@if (!string.IsNullOrEmpty(msg))
+{
+    <label style="color: red"> @msg </label>
+}
+
+@code {
+    private string currentTitleValue { get; set; }
+    private string currentBodyValue { get; set; }
+    private int currentUserValue { get; set; }
+
+    string msg = "";
+
+    private async Task CreatePost()
+    {
+        msg = "";
+
+        if (string.IsNullOrEmpty(currentBodyValue))
+        {
+            msg = "Title cannot be empty";
+            return;
+        }
+        if (string.IsNullOrEmpty(currentBodyValue))
+        {
+            msg = "Body cannot be empty";
+            return;
+        }
+
+        try
+        {
+            UserBasicDTO user = await userService.GetUserById(currentUserValue);
+
+            int userId = user.UserId;
+            string userName = user.Username;
+            
+            PostCreationDTO dto = new(currentUserValue, currentTitleValue, currentBodyValue, new User()
+            {
+                UserID = userId,
+                UserName = userName
+            });
+            Console.WriteLine($"UserId {userId}, Username {userName}");
+            await postsService.CreateAsync(dto);
+
+            msg = "Post created successfully";
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+        
+        //Clears the values in the textboxes
+        currentTitleValue = null;
+        currentBodyValue = null;
+    }
+}

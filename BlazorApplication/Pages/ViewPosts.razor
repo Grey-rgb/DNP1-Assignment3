@@ -2,6 +2,7 @@
 @using Domain.Models
 @using HttpClients.ClientInterfaces
 @inject IPostsService postService
+@inject NavigationManager navMgr
 
 <PageTitle>View all posts</PageTitle>
 
@@ -20,21 +21,25 @@ else if (!posts.Any())
 }
 else
 {
-    <table class="table">
+    <table>
             <thead>
             <tr>
                 <th>Title</th>
                 <th>Body</th>
                 <th>User</th>
+                <th>Display Post</th>
             </tr>
             </thead>
             <tbody>
             @foreach (var item in posts)
             {
                 <tr>
-                    <td>@item.title</td>
-                    <td>@item.body</td>
-                    <td>@item.user</td>
+                    <td class="title-table-data">@item.title</td>
+                    <td class="body-table-data">@item.body</td>
+                    <td class="username-table-data">@item.user.UserName</td>
+                    <td class="button-table-data">
+                        <button class="btn btn-success" @onclick="@(() => navMgr.NavigateTo($"/ViewSinglePost/{item.id}"))">View full post</button>
+                    </td>
                 </tr>
             }
             </tbody>
@@ -48,6 +53,12 @@ else
 @code {
     private IEnumerable<Post>? posts;
     private string msg = "";
+    private bool doShowFilters = false;
+    
+    private string? usernameFilter;
+    private int? userIdFilter;
+    private string? completedStatusFilter;
+    private string? titleContainsFilter;
 
     private async Task LoadTodos()
     {
