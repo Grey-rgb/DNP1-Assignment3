@@ -22,11 +22,6 @@
 
 <button Id="postCreateBtn" class="btn btn-primary" @onclick="CreatePost"> Create Post</button>
 
-@if (!string.IsNullOrEmpty(msg))
-{
-    <label style="color: red"> @msg </label>
-}
-
 @code {
     private string currentTitleValue { get; set; }
     private string currentBodyValue { get; set; }
@@ -61,7 +56,6 @@
                 UserID = userId,
                 UserName = userName
             });
-            Console.WriteLine($"UserId {userId}, Username {userName}");
             await postsService.CreateAsync(dto);
 
             msg = "Post created successfully";

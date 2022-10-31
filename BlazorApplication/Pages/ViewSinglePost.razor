@@ -12,14 +12,17 @@
 else
 {
     <div class="title-field">
-        <h2>@dto.title</h2>
+        <h2>Title: @dto.title</h2>
     </div>
+    <br/>
     <div class="user-field">
-        <h4>@dto.userName</h4>
+        <h4>User: @dto.userName</h4>
     </div>
+    <br/>
     <div class="body-field">
-        <p>@dto.body</p>
+        <p>Body: @dto.body</p>
     </div>
+    <br/>
     <div class="go-back-button-field">
         <button @onclick="@(() => navMgr.NavigateTo($"/ViewPosts"))"> Go back to all posts</button>
     </div>

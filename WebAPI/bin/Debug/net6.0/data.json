@@ -3,6 +3,10 @@
     {
       "UserID": 1,
       "UserName": "Mads"
+    },
+    {
+      "UserID": 2,
+      "UserName": "Bob"
     }
   ],
   "Posts": [
@@ -31,6 +35,24 @@
       "user": {
         "UserID": 1,
         "UserName": "Mads"
+      }
+    },
+    {
+      "id": 4,
+      "title": "wglmwg\u00E6wm",
+      "body": "\u00E6mw\u00F8gk\u00E6nw",
+      "user": {
+        "UserID": 1,
+        "UserName": "Mads"
+      }
+    },
+    {
+      "id": 5,
+      "title": "\u00F8gknwn",
+      "body": "kwg\u00F8qng",
+      "user": {
+        "UserID": 2,
+        "UserName": "Bob"
       }
     }
   ]

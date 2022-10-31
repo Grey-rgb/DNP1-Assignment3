@@ -30,10 +30,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Pages/ViewSinglePost.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1NpbmdsZVBvc3QucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -45,6 +41,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Pages/ViewPosts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1Bvc3RzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-l6re2aspam
+
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Pages/ViewSinglePost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1NpbmdsZVBvc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-swssegiuyr
 
 [C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
