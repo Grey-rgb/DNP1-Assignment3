@@ -2,57 +2,30 @@
   "Users": [
     {
       "UserID": 1,
-      "UserName": "Mads"
+      "UserName": "Admin"
     },
     {
       "UserID": 2,
-      "UserName": "Bob"
+      "UserName": "Mads"
     }
   ],
   "Posts": [
     {
       "id": 1,
-      "title": "Test",
-      "body": "Hello There",
+      "title": "TestPost1",
+      "body": "This is a test post",
       "user": {
         "UserID": 1,
-        "UserName": "Mads"
+        "UserName": "Admin"
       }
     },
     {
       "id": 2,
-      "title": "Random post",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas vel tellus non varius. Fusce lobortis, tortor quis aliquet lobortis, purus justo lobortis elit, at porttitor eros magna at ante. Nunc auctor interdum imperdiet. Duis urna nisi, fringilla quis nisi pulvinar, elementum dignissim eros. Etiam bibendum lorem metus, vitae sodales arcu consequat tempor. Praesent vel ex sed augue facilisis interdum. Maecenas eget pulvinar est, sed hendrerit mauris. Aenean dictum sed massa non malesuada. Quisque maximus tortor turpis, vel porta ligula condimentum vel. Curabitur a pulvinar diam. Integer consectetur dapibus quam non faucibus. Proin imperdiet neque sollicitudin lacus condimentum volutpat.",
+      "title": "Lorem ipsum",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam non augue rhoncus dignissim sit amet finibus quam. Nunc tincidunt eget ligula id efficitur. Duis pretium velit sapien, ac luctus neque dictum sit amet. Suspendisse a justo feugiat, laoreet nibh ut, vulputate erat. Integer sodales magna magna, ut venenatis ante laoreet vitae. Cras blandit ex nibh, sed efficitur justo porttitor id. Aliquam auctor ultricies enim, non egestas est tempor vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras scelerisque, nisi a feugiat ultricies, justo dui suscipit nulla, eget faucibus leo dolor vitae odio. Sed porttitor eget urna vel malesuada. Duis eu justo nec turpis euismod elementum eget at odio. Aliquam consectetur congue laoreet. Vivamus eu consequat orci. Maecenas quis ipsum rutrum, feugiat lacus sed, vehicula ipsum. Fusce id nunc a erat tempor consequat. Donec non justo elementum, laoreet odio sit amet, pellentesque purus.",
       "user": {
         "UserID": 1,
-        "UserName": "Mads"
-      }
-    },
-    {
-      "id": 3,
-      "title": "g\u00F8wkngw",
-      "body": "g\u00E6\u00F8lwkng",
-      "user": {
-        "UserID": 1,
-        "UserName": "Mads"
-      }
-    },
-    {
-      "id": 4,
-      "title": "wglmwg\u00E6wm",
-      "body": "\u00E6mw\u00F8gk\u00E6nw",
-      "user": {
-        "UserID": 1,
-        "UserName": "Mads"
-      }
-    },
-    {
-      "id": 5,
-      "title": "\u00F8gknwn",
-      "body": "kwg\u00F8qng",
-      "user": {
-        "UserID": 2,
-        "UserName": "Bob"
+        "UserName": "Admin"
       }
     }
   ]

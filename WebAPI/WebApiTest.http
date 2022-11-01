@@ -3,3 +3,8 @@ POST https://localhost:7278/auth/login
 Content-Type: application/json
 
 { "Username" : "Mads", "Password" : "1234" }
+
+###
+
+GET https://localhost:7278/posts
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJmZGZlNTFkOC1iZmI1LTQ5ZGItYTg0ZS1lOWQxOTg0Y2ExMGMiLCJpYXQiOiIwMS0xMS0yMDIyIDE0OjUwOjM1IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6Ik1hZHMiLCJleHAiOjE2NjczMTc4MzUsImlzcyI6IkpXVEF1dGhlbnRpY2F0aW9uU2VydmVyIiwiYXVkIjoiSldUU2VydmljZUJsYXpvcldhc21DbGllbnQifQ.lL_qfI8WuMZtIH1NXgfP1rl8ifBWvsLn8xxBAfkrVTKfELaDuA7ugeTfJ6kb7ofKZBed-ZamcfAesPjTe589IQ

@@ -1,1 +1,12 @@
-﻿
+﻿.title-field {
+    text-align: center;
+}
+
+.user-field {
+    text-align: left;
+}
+
+.body-field {
+    border: solid black;
+    text-align: center;
+}

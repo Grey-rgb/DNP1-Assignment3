@@ -1,0 +1,44 @@
+﻿@page "/UserSignUpPage"
+@using BlazorApplication.Services
+@using Domain.DTOs
+@using HttpClients.ClientInterfaces
+@inject IAuthService authService
+@inject IUserService userService
+@inject NavigationManager navMgr
+
+<h4>Sign Up:</h4>
+
+<div class="SignUp-box">
+    <h3>Username:</h3>
+    <input id="username" @bind="username">
+    <br/>
+    <h3>Password:</h3>
+    <input id="password" @bind="password">
+    <br/>
+    <button class="btn btn-success" @onclick="SignUp">Sign up</button>
+    <br/>
+    <p>@errorlabel</p>
+</div>
+
+@code {
+    private string username;
+    private string password;
+    private string errorlabel;
+
+    private async Task SignUp()
+    {
+        errorlabel = "";
+        try
+        {
+            Console.WriteLine($"username: {username}, password: {password}");
+            await authService.RegisterAsync(username, password);
+            await userService.Create(new UserCreationDTO(username));
+            navMgr.NavigateTo("/LoginPage");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorlabel = $"Error: {e.Message}";
+        }
+    }
+}

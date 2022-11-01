@@ -12,10 +12,20 @@ public class UserLoginDAO : ILoginDAO
         this.context = context;
     }
     
-    public Task<UserLoginDTO> GetUser(string username, string password)
+    public Task<UserLoginDTO?> GetUser(string username, string password)
     {
+        if (String.IsNullOrEmpty(username))
+        {
+            throw new Exception("Username field cannot be null");
+        }
+
+        if (String.IsNullOrEmpty(password))
+        {
+            throw new Exception("Password field cannot be null");
+        }
+
         UserLoginDTO? existingUser = context.Users.FirstOrDefault(u =>
-            u.username.Equals(username, StringComparison.OrdinalIgnoreCase));
+            u.username.Equals(username, StringComparison.OrdinalIgnoreCase) && u.password.Equals(password));
         
         return Task.FromResult(existingUser);
     }
@@ -32,7 +42,7 @@ public class UserLoginDAO : ILoginDAO
             throw new Exception("Password cannot be null");
         }
 
-        if (context.Users.Any(u => u.username.Equals(user.username)))
+        if (context.Users.Any(u => u.username.Equals(user.username, StringComparison.OrdinalIgnoreCase)))
         {
             throw new Exception("Username already exists");
         }

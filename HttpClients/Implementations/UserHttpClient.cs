@@ -62,4 +62,21 @@ public class UserHttpClient : IUserService
         })!;
         return user;
     }
+
+    public async Task<UserBasicDTO> GetUserByName(string userName)
+    {
+        HttpResponseMessage response = await client.GetAsync($"/users/{userName}");
+        string result = await response.Content.ReadAsStringAsync();
+
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(result);
+        }
+        
+        UserBasicDTO user = JsonSerializer.Deserialize<UserBasicDTO>(result, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        })!;
+        return user;
+    }
 }

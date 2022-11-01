@@ -55,6 +55,20 @@ public class UserLogic : IUserLogic
         }
     }
 
+    public async Task<User> GetByName(string userName)
+    {
+        try
+        {
+            User? user = await UserDao.GetByUsername(userName);
+            return user!;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+
     private void ValidateData(UserCreationDTO userToCreate)
     {
         string userName = userToCreate.UserName;

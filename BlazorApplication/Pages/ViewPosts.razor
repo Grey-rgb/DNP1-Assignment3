@@ -6,49 +6,54 @@
 
 <PageTitle>View all posts</PageTitle>
 
-<h1>Posts</h1>
-
-<div>
-    <button @onclick="LoadTodos">Load</button>
-</div>
-
-@if (posts == null)
-{
-}
-else if (!posts.Any())
-{
-    <p>No Posts to display</p>
-}
-else
-{
-    <table>
-            <thead>
-            <tr>
-                <th>Title</th>
-                <th>Body</th>
-                <th>User</th>
-                <th>Display Post</th>
-            </tr>
-            </thead>
-            <tbody>
-            @foreach (var item in posts)
-            {
+<AuthorizeView>
+    <Authorized>
+        <h1>Posts</h1>
+        
+        <div>
+            <button @onclick="LoadPosts">Load</button>
+        </div>
+        
+        @if (posts == null)
+        {
+        }
+        else if (!posts.Any())
+        {
+            <p>No Posts to display</p>
+        }
+        else
+        {
+            <table class="content-table">
+                <thead>
                 <tr>
-                    <td class="title-table-data">@item.title</td>
-                    <td class="body-table-data">@item.body</td>
-                    <td class="username-table-data">@item.user.UserName</td>
-                    <td class="button-table-data">
-                        <button class="btn btn-success" @onclick="@(() => navMgr.NavigateTo($"/ViewSinglePost/{item.id}"))">View full post</button>
-                    </td>
+                    <th>Title</th>
+                    <th>User</th>
+                    <th>Display Post</th>
                 </tr>
-            }
-            </tbody>
-        </table>
-}
-@if (!string.IsNullOrEmpty(msg))
-{
-    <label style="color: red">@msg</label>
-}
+                </thead>
+                <tbody>
+                @foreach (var item in posts)
+                {
+                    <tr>
+                        <td class="title-table-data">@item.title</td>
+                        <td class="username-table-data">@item.user.UserName</td>
+                        <td class="button-table-data">
+                            <button class="btn btn-success" @onclick="@(() => navMgr.NavigateTo($"/ViewSinglePost/{item.id}"))">View full post</button>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        }
+        @if (!string.IsNullOrEmpty(msg))
+        {
+            <label style="color: red">@msg</label>
+        }
+    </Authorized>
+    <NotAuthorized>
+        <p>You have to log in to access this feature</p>
+    </NotAuthorized>
+</AuthorizeView>
 
 @code {
     private IEnumerable<Post>? posts;
@@ -60,11 +65,11 @@ else
     private string? completedStatusFilter;
     private string? titleContainsFilter;
 
-    private async Task LoadTodos()
+    private async Task LoadPosts()
     {
         try
         {
-             posts = await postService.GetAllAsync();
+            posts = await postService.GetAllAsync();
         }
         catch (Exception e)
         {

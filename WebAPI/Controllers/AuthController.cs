@@ -35,7 +35,8 @@ public class AuthController : ControllerBase
             config["Jwt:Issuer"],
             config["Jwt:Audience"], 
             claims,
-            null, new DateTime(638028349006427981L, DateTimeKind.Utc).AddMinutes(60));
+            null,
+            DateTime.UtcNow.AddMinutes(60));
     
         JwtSecurityToken token = new JwtSecurityToken(header, payload);
     
@@ -50,7 +51,7 @@ public class AuthController : ControllerBase
             new Claim(JwtRegisteredClaimNames.Sub, config["Jwt:Subject"]),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-            new Claim("DisplayName", user.username)
+            new Claim(ClaimTypes.Name, user.username)
         };
 
         return claims.ToList();
@@ -72,7 +73,7 @@ public class AuthController : ControllerBase
         }
     }
 
-    [HttpPost]
+    [HttpPost, Route("register")]
     public async Task<ActionResult<UserLoginDTO>> PostUserAsync(UserLoginDTO dto)
     {
         try

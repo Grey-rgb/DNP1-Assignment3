@@ -16,19 +16,7 @@ public class LoginLogic : ILoginLogic
     public async Task<UserLoginDTO> CreateAsync(UserLoginDTO dto)
     {
         UserLoginDTO? user = await loginDao.GetUser(dto.username, dto.password);
-        if (user != null)
-        {
-            if (user.username.Equals(dto.username))
-            {
-                throw new Exception("Username taken");
-            }
-        }
-
-        UserLoginDTO newDto = new UserLoginDTO()
-        {
-            username = dto.username,
-            password = dto.password
-        };
+        UserLoginDTO newDto = new UserLoginDTO(dto.username, dto.password);
         UserLoginDTO created = await loginDao.RegisterUser(newDto);
         return created;
     }

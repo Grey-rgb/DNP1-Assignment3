@@ -10,4 +10,5 @@ public interface IUserService
     Task<IEnumerable<User>> GetUsersAsync();
     
     Task<UserBasicDTO> GetUserById(int id);
+    Task<UserBasicDTO> GetUserByName(string userName);
 }

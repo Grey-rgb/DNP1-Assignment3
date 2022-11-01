@@ -1,4 +1,5 @@
 ﻿@page "/CreatePosts"
+@using System.Security.Claims
 @using Domain.DTOs
 @using Domain.Models
 @using HttpClients.ClientInterfaces
@@ -6,28 +7,53 @@
 @inject IUserService userService
 <PageTitle>PostCreation</PageTitle>
 
-<h1>Create new post</h1>
+<AuthorizeView>
+    <Authorized>
+        <h1>Create new post</h1>
 
-<h4>Title:</h4>
-<input Id="title" @bind="currentTitleValue">
-<br/>
+        <h4>Title:</h4>
+        <input Id="title" @bind="currentTitleValue">
+        <br/>
+        
+        <h4>Body: </h4>
+        <input Id="body" @bind="currentBodyValue">
+        <br/>
 
-<h4>Body: </h4>
-<input Id="body" @bind="currentBodyValue">
-<br/>
-
-<h4>User: </h4>
-<input Id="user" @bind="currentUserValue">
-<br/>
-
-<button Id="postCreateBtn" class="btn btn-primary" @onclick="CreatePost"> Create Post</button>
+        <button Id="postCreateBtn" class="btn btn-primary" @onclick="CreatePost"> Create Post</button>
+    </Authorized>
+    
+    <NotAuthorized>
+        <p>Not authorized to access</p>
+    </NotAuthorized>
+</AuthorizeView>
 
 @code {
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; } = null!;
+
     private string currentTitleValue { get; set; }
     private string currentBodyValue { get; set; }
-    private int currentUserValue { get; set; }
+
+
+    private string? name;
+    private IEnumerable<Claim>? userClaims;
+    private bool isLoggedIn;
 
     string msg = "";
+    
+    protected override async Task OnInitializedAsync()
+    {
+        AuthenticationState authState = await AuthState;
+        ClaimsPrincipal user = authState.User;
+        isLoggedIn = user.Identity != null;
+        
+        if (!isLoggedIn) return;
+        
+        userClaims = user.Claims;
+        name = user.Identity!.Name!;
+        
+        Console.WriteLine(name);
+    }
 
     private async Task CreatePost()
     {
@@ -46,12 +72,12 @@
 
         try
         {
-            UserBasicDTO user = await userService.GetUserById(currentUserValue);
+            UserBasicDTO user = await userService.GetUserByName(name);
 
             int userId = user.UserId;
             string userName = user.Username;
             
-            PostCreationDTO dto = new(currentUserValue, currentTitleValue, currentBodyValue, new User()
+            PostCreationDTO dto = new(userId, currentTitleValue, currentBodyValue, new User()
             {
                 UserID = userId,
                 UserName = userName

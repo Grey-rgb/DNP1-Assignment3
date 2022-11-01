@@ -2,57 +2,21 @@
   "Users": [
     {
       "UserID": 1,
-      "UserName": "Mads"
+      "UserName": "Admin"
     },
     {
       "UserID": 2,
-      "UserName": "Bob"
+      "UserName": "Mads"
     }
   ],
   "Posts": [
     {
       "id": 1,
-      "title": "Test",
-      "body": "Hello There",
+      "title": "TestPost1",
+      "body": "This is a test post",
       "user": {
         "UserID": 1,
-        "UserName": "Mads"
-      }
-    },
-    {
-      "id": 2,
-      "title": "Random post",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas vel tellus non varius. Fusce lobortis, tortor quis aliquet lobortis, purus justo lobortis elit, at porttitor eros magna at ante. Nunc auctor interdum imperdiet. Duis urna nisi, fringilla quis nisi pulvinar, elementum dignissim eros. Etiam bibendum lorem metus, vitae sodales arcu consequat tempor. Praesent vel ex sed augue facilisis interdum. Maecenas eget pulvinar est, sed hendrerit mauris. Aenean dictum sed massa non malesuada. Quisque maximus tortor turpis, vel porta ligula condimentum vel. Curabitur a pulvinar diam. Integer consectetur dapibus quam non faucibus. Proin imperdiet neque sollicitudin lacus condimentum volutpat.",
-      "user": {
-        "UserID": 1,
-        "UserName": "Mads"
-      }
-    },
-    {
-      "id": 3,
-      "title": "g\u00F8wkngw",
-      "body": "g\u00E6\u00F8lwkng",
-      "user": {
-        "UserID": 1,
-        "UserName": "Mads"
-      }
-    },
-    {
-      "id": 4,
-      "title": "wglmwg\u00E6wm",
-      "body": "\u00E6mw\u00F8gk\u00E6nw",
-      "user": {
-        "UserID": 1,
-        "UserName": "Mads"
-      }
-    },
-    {
-      "id": 5,
-      "title": "\u00F8gknwn",
-      "body": "kwg\u00F8qng",
-      "user": {
-        "UserID": 2,
-        "UserName": "Bob"
+        "UserName": "Admin"
       }
     }
   ]

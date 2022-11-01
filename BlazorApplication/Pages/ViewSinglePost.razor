@@ -5,33 +5,41 @@
 @inject IPostsService postsService
 @inject NavigationManager navMgr
 
-@if (dto == null)
-{
-    <label>Loading post data</label>
-}
-else
-{
-    <div class="title-field">
-        <h2>Title: @dto.title</h2>
-    </div>
-    <br/>
-    <div class="user-field">
-        <h4>User: @dto.userName</h4>
-    </div>
-    <br/>
-    <div class="body-field">
-        <p>Body: @dto.body</p>
-    </div>
-    <br/>
-    <div class="go-back-button-field">
-        <button @onclick="@(() => navMgr.NavigateTo($"/ViewPosts"))"> Go back to all posts</button>
-    </div>
-}
-
-@if (!string.IsNullOrEmpty(msg))
-    {
-        <label style="color: red">@msg</label>
-    }
+<AuthorizeView>
+    <Authorized>
+        @if (dto == null)
+        {
+            <label>Loading post data</label>
+        }
+        else
+        {
+            <div class="title-field">
+                <h2>Title: @dto.title</h2>
+            </div>
+            <br/>
+            <div class="user-field">
+                <h4>User: @dto.userName</h4>
+            </div>
+            <br/>
+            <h4>Body:</h4>
+            <div class="body-field">
+                <p>@dto.body</p>
+            </div>
+            <br/>
+            <div class="go-back-button-field">
+                <button @onclick="@(() => navMgr.NavigateTo($"/ViewPosts"))"> Go back to all posts</button>
+            </div>
+        }
+        
+        @if (!string.IsNullOrEmpty(msg))
+        {
+            <label style="color: red">@msg</label>
+        }
+    </Authorized>
+    <NotAuthorized>
+        <p>You have to log in to access this feature</p>
+    </NotAuthorized>
+</AuthorizeView>
 
 @code {
     [Parameter]

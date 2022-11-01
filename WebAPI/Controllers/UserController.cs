@@ -1,6 +1,7 @@
 ﻿using Application.LogicInterfaces;
 using Domain.DTOs;
 using Domain.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;
@@ -53,6 +54,21 @@ public class UserController : ControllerBase
         {
             User user = await userLogic.GetById(id);
             return Ok(user);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+    
+    [HttpGet("{userName:alpha}")]
+    public async Task<ActionResult<IEnumerable<User>>> GetUserByName([FromRoute] string userName)
+    {
+        try
+        {
+            User users = await userLogic.GetByName(userName);
+            return Ok(users);
         }
         catch (Exception e)
         {

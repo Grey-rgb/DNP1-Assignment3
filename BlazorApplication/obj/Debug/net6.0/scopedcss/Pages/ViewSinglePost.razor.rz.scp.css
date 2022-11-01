@@ -1,14 +1,12 @@
 .title-field[b-swssegiuyr] {
-    border: 1px solid black;
-    background-color: lightgrey;
+    text-align: center;
 }
 
 .user-field[b-swssegiuyr] {
-    border: 1px solid black;
-    background-color: lightblue;
+    text-align: left;
 }
 
 .body-field[b-swssegiuyr] {
-    border: 1px solid black;
-    background-color: lightcoral;
+    border: solid black;
+    text-align: center;
 }
