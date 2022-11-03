@@ -41,20 +41,6 @@ public class UserLogic : IUserLogic
         return await UserDao.getAllAsync();
     }
 
-    public async Task<User> GetById(int id)
-    {
-        try
-        {
-            User? user = await UserDao.GetByIDAsync(id);
-            return user!;
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            throw new Exception("User does not exist");
-        }
-    }
-
     public async Task<User> GetByName(string userName)
     {
         try

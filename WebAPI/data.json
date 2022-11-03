@@ -1,32 +1,8 @@
 {
   "Users": [
-    {
-      "UserID": 1,
-      "UserName": "Admin"
-    },
-    {
-      "UserID": 2,
-      "UserName": "Mads"
-    }
+    
   ],
   "Posts": [
-    {
-      "id": 1,
-      "title": "TestPost1",
-      "body": "This is a test post",
-      "user": {
-        "UserID": 1,
-        "UserName": "Admin"
-      }
-    },
-    {
-      "id": 2,
-      "title": "Lorem ipsum",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam non augue rhoncus dignissim sit amet finibus quam. Nunc tincidunt eget ligula id efficitur. Duis pretium velit sapien, ac luctus neque dictum sit amet. Suspendisse a justo feugiat, laoreet nibh ut, vulputate erat. Integer sodales magna magna, ut venenatis ante laoreet vitae. Cras blandit ex nibh, sed efficitur justo porttitor id. Aliquam auctor ultricies enim, non egestas est tempor vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras scelerisque, nisi a feugiat ultricies, justo dui suscipit nulla, eget faucibus leo dolor vitae odio. Sed porttitor eget urna vel malesuada. Duis eu justo nec turpis euismod elementum eget at odio. Aliquam consectetur congue laoreet. Vivamus eu consequat orci. Maecenas quis ipsum rutrum, feugiat lacus sed, vehicula ipsum. Fusce id nunc a erat tempor consequat. Donec non justo elementum, laoreet odio sit amet, pellentesque purus.",
-      "user": {
-        "UserID": 1,
-        "UserName": "Admin"
-      }
-    }
+    
   ]
 }
