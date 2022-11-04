@@ -1,19 +1,8 @@
 {
   "Users": [
-    {
-      "UserID": 1,
-      "UserName": "Admin"
-    }
+    
   ],
   "Posts": [
-    {
-      "id": 1,
-      "title": "\u00E6glwjng\u00E5owjngq",
-      "body": "lwgjnw\u00E5ojbgw\u00E5ojnq\u00E5\u00F8gjnw\u00F8b \u00E5qjf\u00A8\u00E5owjng\u00A8wq",
-      "user": {
-        "UserID": 1,
-        "UserName": "Admin"
-      }
-    }
+    
   ]
 }
