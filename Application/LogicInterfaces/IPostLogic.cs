@@ -7,5 +7,5 @@ public interface IPostLogic
 {
     Task<Post> CreateAsync(PostCreationDTO dto);
     Task<IEnumerable<Post>> GetAsyncAll();
-    Task<PostViewDTO> GetByIdAsync(int id);
+    Task<Post> GetByIdAsync(int id);
 }

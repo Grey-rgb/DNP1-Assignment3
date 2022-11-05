@@ -1,8 +1,19 @@
 {
   "Users": [
-    
+    {
+      "UserID": 1,
+      "UserName": "Admin"
+    }
   ],
   "Posts": [
-    
+    {
+      "id": 1,
+      "title": "Lorem ipsum",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus arcu, commodo non tincidunt non, venenatis porta risus. Quisque facilisis feugiat sapien, eu rutrum sem vehicula sed. Quisque non pulvinar massa. Donec diam urna, vulputate a nisi sit amet, accumsan finibus massa. In hac habitasse platea dictumst. Pellentesque at mi sed metus aliquet accumsan. In faucibus aliquam justo, eget venenatis mauris dignissim non.",
+      "user": {
+        "UserID": 1,
+        "UserName": "Admin"
+      }
+    }
   ]
 }

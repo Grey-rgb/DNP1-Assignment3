@@ -1,11 +1,13 @@
-﻿namespace Domain.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Domain.Models;
 
 public class Post
 {
-    public int id { set; get; }
-    public string title { get; }
-    public string body { get; }
-    public User user { get; }
+    public int id { get; set; }
+    public string title { get; private set; }
+    public string body { get; private set; }
+    public User user { get; private set; }
 
     public Post(string title, string body, User user)
     {
@@ -13,4 +15,6 @@ public class Post
         this.body = body;
         this.user = user;
     }
+    
+    private Post(){}
 }

@@ -2,8 +2,8 @@ using System.Text;
 using Application.DAOInterfaces;
 using Application.Logic;
 using Application.LogicInterfaces;
-using FileData;
-using FileData.DAOs;
+using EFCDataAccess;
+using EFCDataAccess.DAOs;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using WebAPI.Services;
@@ -31,17 +31,17 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     };
 });
 
-builder.Services.AddScoped<FileContext>();
-builder.Services.AddScoped<IUserDAO, UserFileDAO>();
+builder.Services.AddDbContext<PostContext>();
+builder.Services.AddScoped<IUserDAO, UserEfcDao>();
 builder.Services.AddScoped<IUserLogic, UserLogic>();
 
-builder.Services.AddScoped<IPostDAO, PostFileDAO>();
+builder.Services.AddScoped<IPostDAO, PostEfcDao>();
 builder.Services.AddScoped<IPostLogic, PostLogic>();
 
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ILoginLogic, LoginLogic>();
-builder.Services.AddScoped<ILoginDAO, UserLoginDAO>();
-builder.Services.AddScoped<FileContextLogin>();
+builder.Services.AddScoped<ILoginDAO, UserLoginEfcDao>();
+builder.Services.AddDbContext<LoginContext>();
 
 var app = builder.Build();
 

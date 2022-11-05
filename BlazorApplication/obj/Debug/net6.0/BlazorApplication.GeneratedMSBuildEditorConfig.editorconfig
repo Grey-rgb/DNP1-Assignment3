@@ -11,57 +11,57 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BlazorApplication
 build_property.RootNamespace = BlazorApplication
-build_property.ProjectDir = C:\Users\mads8\OneDrive - ViaUC\Desktop\VIA UNI - 3. Semester\DNP1\Assignments\Assignment 1\Assignment 1 - code\Assignment1\BlazorApplication\
+build_property.ProjectDir = C:\Users\mads8\OneDrive - ViaUC\Desktop\VIA UNI - 3. Semester\DNP1\Assignments\Assignment 3\Assignment 3 - code\BlazorApplication\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\mads8\OneDrive - ViaUC\Desktop\VIA UNI - 3. Semester\DNP1\Assignments\Assignment 1\Assignment 1 - code\Assignment1\BlazorApplication
+build_property.MSBuildProjectDirectory = C:\Users\mads8\OneDrive - ViaUC\Desktop\VIA UNI - 3. Semester\DNP1\Assignments\Assignment 3\Assignment 3 - code\BlazorApplication
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/App.razor]
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 3/Assignment 3 - code/BlazorApplication/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Pages/CreatePosts.razor]
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 3/Assignment 3 - code/BlazorApplication/Pages/CreatePosts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlUG9zdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Pages/Index.razor]
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 3/Assignment 3 - code/BlazorApplication/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Pages/LoginButtons.razor]
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 3/Assignment 3 - code/BlazorApplication/Pages/LoginButtons.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5CdXR0b25zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Shared/SurveyPrompt.razor]
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 3/Assignment 3 - code/BlazorApplication/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/_Imports.razor]
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 3/Assignment 3 - code/BlazorApplication/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Pages/UserLoginPage.razor]
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 3/Assignment 3 - code/BlazorApplication/Pages/UserLoginPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckxvZ2luUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-30viq34xe4
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Pages/UserSignUpPage.razor]
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 3/Assignment 3 - code/BlazorApplication/Pages/UserSignUpPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclNpZ25VcFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-jovzrtdlcg
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Pages/ViewPosts.razor]
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 3/Assignment 3 - code/BlazorApplication/Pages/ViewPosts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1Bvc3RzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-l6re2aspam
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Pages/ViewSinglePost.razor]
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 3/Assignment 3 - code/BlazorApplication/Pages/ViewSinglePost.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1NpbmdsZVBvc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-swssegiuyr
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Shared/MainLayout.razor]
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 3/Assignment 3 - code/BlazorApplication/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-yq70x9dt5e
 
-[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 1/Assignment 1 - code/Assignment1/BlazorApplication/Shared/NavMenu.razor]
+[C:/Users/mads8/OneDrive - ViaUC/Desktop/VIA UNI - 3. Semester/DNP1/Assignments/Assignment 3/Assignment 3 - code/BlazorApplication/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-pahgify441

@@ -51,7 +51,7 @@ public class PostController : ControllerBase
     {
         try
         {
-            PostViewDTO result = await postLogic.GetByIdAsync(id);
+            Post result = await postLogic.GetByIdAsync(id);
             return Ok(result);
         }
         catch (Exception e)

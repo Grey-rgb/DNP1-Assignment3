@@ -35,7 +35,7 @@ public class PostLogic : IPostLogic
         return postDAO.GetAsyncAll();
     }
 
-    public async Task<PostViewDTO> GetByIdAsync(int id)
+    public async Task<Post> GetByIdAsync(int id)
     {
         Post? post = await postDAO.GetByIdAsync(id);
         if (post == null)
@@ -43,12 +43,7 @@ public class PostLogic : IPostLogic
             throw new Exception($"post with id: {id} does not exist within the system");
         }
 
-        return new PostViewDTO(id)
-        {
-            title = post.title,
-            body = post.body,
-            userName = post.user.UserName
-        };
+        return post;
     }
 
     private void ValidateTodo(PostCreationDTO dto)
