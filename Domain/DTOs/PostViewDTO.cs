@@ -9,7 +9,7 @@ public class PostViewDTO
     
     public string body { get; set; }
     
-    public string userName { get; set; }
+    public User user { get; set; }
 
     public PostViewDTO(int id)
     {

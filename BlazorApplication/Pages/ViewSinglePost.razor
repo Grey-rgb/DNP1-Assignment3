@@ -17,7 +17,7 @@
             </div>
             <br/>
             <div class="user-field">
-                <h4>User: @dto.userName</h4>
+                <h4>User: @dto.user.UserName</h4>
             </div>
             <br/>
             <h4>Body:</h4>
@@ -55,11 +55,13 @@
         {
             PostViewDTO postData = await postsService.GetByIdAsync(Id);
 
+            Console.WriteLine($"Postdata: Id = {postData.Id} Body = {postData.body} Title = {postData.title} User name = {postData.user.UserName}");
+
             dto = new PostViewDTO(Id)
             {
                 title = postData.title,
                 body = postData.body,
-                userName = postData.userName
+                user = postData.user
             };
         }
         catch (Exception e)

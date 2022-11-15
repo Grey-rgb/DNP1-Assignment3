@@ -23,17 +23,18 @@ public class PostEfcDao : IPostDAO
 
     public async Task<IEnumerable<Post>> GetAsyncAll()
     {
-        IQueryable<Post> query = context.Posts.Include(todo => todo.user).AsQueryable();
+        IQueryable<Post> query = context.Posts
+            .Include(todo => todo.user)
+            .AsQueryable();
         List<Post> result = await query.ToListAsync();
         return result;
     }
 
     public async Task<Post?> GetByIdAsync(int id)
     {
-        IQueryable<Post> query = context.Posts.Include(todo => todo.user)
-            .AsQueryable()
-            .Where(p => p.id == id);
-        List<Post> result = await query.ToListAsync();
-        return result.First();
+        Post? existing = await context.Posts
+            .Include(post => post.user)
+            .FirstOrDefaultAsync(post => post.id == id);
+        return existing;
     }
 }

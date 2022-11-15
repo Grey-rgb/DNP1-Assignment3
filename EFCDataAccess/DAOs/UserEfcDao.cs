@@ -24,6 +24,11 @@ public class UserEfcDao : IUserDAO
 
     public async Task<User?> GetByUsername(string userName)
     {
+        if (String.IsNullOrEmpty(userName))
+        {
+            throw new Exception("Username field cannot be null");
+        }
+        
         User? existing = await context.Users.FirstOrDefaultAsync(u =>
             u.UserName.ToLower().Equals(userName.ToLower())
         );

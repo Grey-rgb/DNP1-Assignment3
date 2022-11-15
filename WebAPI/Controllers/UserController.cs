@@ -28,7 +28,7 @@ public class UserController : ControllerBase
         catch (Exception e)
         {
             Console.WriteLine(e);
-            return StatusCode(StatusCodes.Status500InternalServerError);
+            return StatusCode(500, e.Message);
         }
     }
 
