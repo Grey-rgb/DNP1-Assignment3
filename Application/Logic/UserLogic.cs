@@ -7,13 +7,16 @@ namespace Application.Logic;
 
 public class UserLogic : IUserLogic
 {
+    //Attributes
     private readonly IUserDAO UserDao;
 
+    //Constructor
     public UserLogic(IUserDAO userDao)
     {
         this.UserDao = userDao;
     }
 
+    //CreateAsync method to create a user
     public async Task<User> CreateAsync(UserCreationDTO dto)
     {
         User? existing = await UserDao.GetByUsername(dto.UserName);

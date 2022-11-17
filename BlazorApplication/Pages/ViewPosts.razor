@@ -9,11 +9,7 @@
 <AuthorizeView>
     <Authorized>
         <h1>Posts</h1>
-        
-        <div>
-            <button @onclick="LoadPosts">Load</button>
-        </div>
-        
+
         @if (posts == null)
         {
         }
@@ -65,7 +61,7 @@
     private string? completedStatusFilter;
     private string? titleContainsFilter;
 
-    private async Task LoadPosts()
+    protected override async Task OnInitializedAsync()
     {
         try
         {
